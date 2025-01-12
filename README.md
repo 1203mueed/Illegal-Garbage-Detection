@@ -5,7 +5,7 @@ This repository contains models and scripts for detecting and segmenting garbage
 ## Project Structure
 
 ```
-1203mueed-illegal-garbage-detection/
+Illegal-Garbage-Detection/
 ├── README.md                 # Project documentation
 ├── Detectron 2/              # Detectron 2 implementation
 │   └── detectron2.ipynb      # Jupyter notebook for Detectron 2 model
@@ -13,24 +13,25 @@ This repository contains models and scripts for detecting and segmenting garbage
 │   ├── maskrcnn_train.py     # Training script for Mask R-CNN
 │   ├── training_metrics.csv  # Training metrics log
 │   └── training_metricsold.csv # Previous training metrics log
-└── YOLO/                     # YOLO-based implementations
-    ├── custom.yaml           # Configuration for custom training
-    ├── yolov11Train.py       # YOLOv11 training script
-    ├── yolov8Train.py        # YOLOv8 training script
-    └── runs/                 # Training outputs and results
-        └── segment/          # Segmentation outputs
-            ├── train1/       # Training session 1 (YOLOv11 results)
-            │   ├── args.yaml     # Training arguments
-            │   ├── results.csv   # Training results
-            │   └── weights/      # Model weights
-            │       ├── best.pt   # Best model weights
-            │       └── last.pt   # Last model weights
-            └── train2/       # Training session 2 (YOLOv8 results)
-                ├── args.yaml     # Training arguments
-                ├── results.csv   # Training results
-                └── weights/      # Model weights
-                    ├── best.pt   # Best model weights
-                    └── last.pt   # Last model weights
+├── YOLO/                     # YOLO-based implementations
+│   ├── custom.yaml           # Configuration for custom training
+│   ├── yolov11Train.py       # YOLOv11 training script
+│   ├── yolov8Train.py        # YOLOv8 training script
+│   └── runs/                 # Training outputs and results
+│       └── segment/          # Segmentation outputs
+│           ├── train1/       # Training session 1 (YOLOv11 results)
+│           │   ├── args.yaml     # Training arguments
+│           │   ├── results.csv   # Training results
+│           │   └── weights/      # Model weights
+│           │       ├── best.pt   # Best model weights
+│           │       └── last.pt   # Last model weights
+│           └── train2/       # Training session 2 (YOLOv8 results)
+│               ├── args.yaml     # Training arguments
+│               ├── results.csv   # Training results
+│               └── weights/      # Model weights
+│                   ├── best.pt   # Best model weights
+│                   └── last.pt   # Last model weights
+└── requirements.txt          # Python dependencies
 ```
 
 ## Models Implemented
@@ -76,22 +77,28 @@ names: ['Garbage']
 
 ## Usage
 
-### 1. Train Mask R-CNN
+### 1. Install Dependencies
+Install all required Python libraries:
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Train Mask R-CNN
 ```bash
 python Mask\ R\ Cnn/maskrcnn_train.py
 ```
 
-### 2. Train YOLOv8
+### 3. Train YOLOv8
 ```bash
 python YOLO/yolov8Train.py
 ```
 
-### 3. Train YOLOv11
+### 4. Train YOLOv11
 ```bash
 python YOLO/yolov11Train.py
 ```
 
-### 4. Detectron 2
+### 5. Detectron 2
 Run the Jupyter notebook `Detectron 2/detectron2.ipynb` to train and test the model. It is recommended to use **Google Colab** for this.
 
 ## Results
