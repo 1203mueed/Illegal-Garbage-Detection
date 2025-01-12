@@ -1,0 +1,5 @@
+train: C:\Users\lib612\Desktop\xyz\train
+val: C:\Users\lib612\Desktop\xyz\val
+
+nc: 1
+names: ['Garbage']
