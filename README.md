@@ -122,10 +122,6 @@ Training metrics are logged in `training_metrics.csv` and `training_metricsold.c
 - Experiment with hybrid models combining YOLO and Mask R-CNN.
 - Deploy the best model as a real-time API.
 
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
-
 ## Acknowledgements
 - [Detectron2](https://github.com/facebookresearch/detectron2)
 - [Ultralytics YOLO](https://github.com/ultralytics/yolov5)
