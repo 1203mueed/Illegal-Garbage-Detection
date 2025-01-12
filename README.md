@@ -1,4 +1,4 @@
-# Illegal Garbage Detection
+# Illegal Garbage Detection & Segmentation
 
 This repository contains models and scripts for detecting and segmenting garbage in images using state-of-the-art object detection and instance segmentation techniques. The primary objective is to address illegal dumping and enhance waste management through AI-driven solutions.
 
